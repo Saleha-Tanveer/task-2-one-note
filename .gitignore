@@ -131,3 +131,7 @@ dmypy.json
 
 # idea file
 .idea
+
+#ignore environment k liye
+env/
+venv/
