@@ -4,7 +4,7 @@ from functools import wraps
 from flask import session, jsonify, app, request
 from werkzeug.exceptions import abort
 
-from Schemas import User
+from Schemas.UserModel import User
 from database import db
 from validators import password_is_valid
 

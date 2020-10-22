@@ -2,7 +2,7 @@
 from flask import Flask
 from flask_migrate import Migrate, Manager, MigrateCommand
 from flask_sqlalchemy import SQLAlchemy
-from db_credentials import SQL_USER, SQL_HOST,SQL_PASS, SQL_DB
+from db_credentials import SQL_USER, SQL_HOST, SQL_PASS, SQL_DB
 
 app = Flask(__name__)
 app.secret_key = "login key"
