@@ -3,7 +3,7 @@ from database import db
 # from run import ma
 
 class Note(db.Model):
-    __tablename__='Note hi note zindagi mein ... aahahhaha'
+    __tablename__='Note 10 wala'
     id =db.Column('note_id',db.Integer,primary_key=True)
     category=db.Column('category',db.String(50),nullable=False)
     note_title=db.Column('note_title',db.String(50),nullable=False)
