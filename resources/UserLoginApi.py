@@ -27,6 +27,7 @@ def login_required(f):
 
 # register route
 @app.route('/register/', methods=['POST'])
+@login_required
 def registration():
     username = request.json.get('username')
     password = request.json.get('password')
@@ -48,6 +49,7 @@ def registration():
 
 # login route
 @app.route('/login', methods=['GET'])
+@login_required
 def login():
     username = request.json.get('username')
     password = request.json.get('password')
@@ -72,3 +74,4 @@ def logout():
     session.pop('logged_in', None)  # end session
     session.pop('user_id', None)  # clear user_id
     return jsonify("logged out. Session closed")
+
